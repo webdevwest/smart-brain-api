@@ -52,7 +52,7 @@ app.use(cors());
 // 	]
 // }
 
-app.get('/', (req, res) => {res.send(database.users)})
+app.get('/', (req, res) => {res.send('is it working!')})
 
 app.post('/signin', signin.handleSignin(db, bcrypt))
 
